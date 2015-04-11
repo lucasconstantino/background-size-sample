@@ -5,3 +5,7 @@ html, body {
 #image-container {
   background-color: white;
 }
+
+#image {
+  margin: 0 auto;
+}
