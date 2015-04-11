@@ -44,10 +44,15 @@ app.controller('BackgroundSizeCtrl', function ($scope) {
   };
 
   $scope.height = 200;
+  $scope.width = 100;
   $scope.image = 'http://lorempixel.com/900/500/nature';
 
   $scope.$watch('height', function (value) {
     $scope.styles.height = value + 'px';
+  });
+
+  $scope.$watch('width', function (value) {
+    $scope.styles.width = value + '%';
   });
 
   $scope.$watch('image', function (value) {
